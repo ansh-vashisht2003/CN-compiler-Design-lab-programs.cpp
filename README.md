@@ -35,6 +35,12 @@ To provide input via a text file (e.g., filename.txt), run the following command
 
 ./a.out filename.txt
 
+The contents of filename.txt will be processed by the lexical analyzer.
+
+### 4. Give Input
+
+Before Giving input press Ctrl+D and then give Input 
+
 
 
 
