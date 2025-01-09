@@ -14,58 +14,27 @@ This repository contains a Lex-based program for lexical analysis. Below are the
 ### 1. Run Lex on your `.l` file
 To start, use Lex to generate the C code for the lexical analyzer from your Lex specification file (with a `.l` extension). Run the following command:
 
-```bash
 lex filename.l
+### 2. Compile the Lex C Code
 
-2. Compile the Lex C code
-Once the C file is generated, compile it using gcc or cc to create an executable. Run one of the following commands:
+Once the C file is generated, compile it using `gcc` or `cc` to create an executable. Run one of the following commands:
 
-bash
-Copy code
-gcc lex.yy.c -o lex_program
-or
+gcc lex.yy.c or cc lex.yy.c
 
-bash
-Copy code
-cc lex.yy.c -o lex_program
-This will compile the Lex-generated code and produce an executable named lex_program.
+### 3. Compile object code
 
-3. Run the Executable
 Once compiled, you can run the executable. There are two options for running it, depending on how you want to provide the input:
 
 3.1 Running Without an Input File
 If you want to provide input directly (usually via stdin), run the following command:
 
-bash
-Copy code
-./lex_program
-You will then be able to enter input manually for the program to process.
+./a.out
 
 3.2 Running With an Input File
 To provide input via a text file (e.g., filename.txt), run the following command:
 
-bash
-Copy code
-./lex_program filename.txt
-The contents of filename.txt will be processed by the lexical analyzer.
+./a.out filename.txt
 
-Example Workflow
-Create or modify your own filename.l Lex specification file.
 
-Run Lex to generate the C code:
-
-bash
-Copy code
-lex filename.l
-Compile the generated C code:
-
-bash
-Copy code
-gcc lex.yy.c -o lex_program
-Run the program with input:
-
-bash
-Copy code
-./lex_program filename.txt
 
 
